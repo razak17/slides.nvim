@@ -1,5 +1,9 @@
 syntax on
 filetype off
+setlocal nonumber
+setlocal norelativenumber
+setlocal laststatus=0
+
 hi CursorLineNr cterm=bold
 
 set foldtext=SimpleFoldText()

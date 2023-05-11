@@ -1,7 +1,8 @@
 # Slides.nvim
 
 Custom slide filetype for neovim
-
+# Requirements
+requires [toilet](https://github.com/cacalabs/toilet)
 # Installation
 ## [Lazy](https://github.com/folke/lazy.nvim)
 

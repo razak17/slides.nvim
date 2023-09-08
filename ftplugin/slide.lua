@@ -21,3 +21,13 @@ end, {
     if #params == 1 then return completion_store end
   end,
 })
+
+vim.api.nvim_create_autocmd('BufLeave', {
+  pattern = { '*.sld' },
+  callback = function() vim.cmd('setlocal laststatus=3') end,
+})
+
+vim.api.nvim_create_autocmd('BufEnter', {
+  pattern = { '*.sld' },
+  callback = function() vim.cmd('setlocal laststatus=0') end,
+})

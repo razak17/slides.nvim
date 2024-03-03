@@ -1,4 +1,15 @@
-local completion_store = { 'bfraktur', 'emboss', 'emboss2', 'bigascii12', 'letter', 'bigmono12', 'wideterm', 'term' }
+local completion_store = {
+  'bfraktur',
+  'emboss',
+  'emboss2',
+  'bigascii12',
+  'letter',
+  'bigmono12',
+  'wideterm',
+  'smblock',
+  'smmono12',
+  'term',
+}
 
 vim.api.nvim_create_user_command('SlideAscii', function(opts)
   local params = vim.split(opts.args, '%s+', { trimempty = true })
